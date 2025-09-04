@@ -1,7 +1,7 @@
 ## To-Do
 Create Landing Page:
     - Banner:
-        - Faded background
+        - Faded background (Gradient)
         - img of my face on the right
         - Name on the left
     - Small "About Me" section. It should have my coding language experience and motivation for programming.
