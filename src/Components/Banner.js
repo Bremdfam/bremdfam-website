@@ -6,8 +6,14 @@ function Banner({ title }) {
             sx={{
                 width: "100vw",
                 height: "25vh",
-                background:
-                    "linear-gradient(90deg,rgba(235, 90, 0, 1) 0%, rgba(255, 255, 255, 1) 65%, rgba(235, 90, 0, 1) 100%)"
+                backgroundImage: `
+                    linear-gradient(90deg, rgba(235, 90, 0, 1) 0%, rgba(255, 255, 255, 0) 65%, rgba(235, 90, 0, 1) 100%),
+                    url('/images/placeholder_img.jpg')
+                    `,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: '60%',
+                backgroundSize: 'contain',
+                backgroundBlendMode: 'overlay',
             }}
         >
             <Box
