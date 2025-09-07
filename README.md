@@ -41,6 +41,11 @@ Create Projects Page:
         - Coding language tag
         - Under Development tag
     - Styling
+Code Cleanup:
+    - add "aria-labels" for accessability
+Future Considerations:
+    - Footer
+    - Mobile View
 
 ## Deploy on Vercel
 
