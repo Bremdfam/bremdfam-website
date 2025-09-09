@@ -47,7 +47,7 @@ function Menu() {
                 >
                     <Typography>Bremdfam's Site</Typography>
                     <Link href='/'>Home</Link>
-                    <Link href='/'>About Me</Link>
+                    <Link href='/AboutMe'>About Me</Link>
                     <Link href='/'>Projects</Link>
                     <Link href='/'>LinkedIn</Link>
                     <Link href='https://github.com/Bremdfam' target='_blank'>Github</Link>
