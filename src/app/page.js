@@ -14,7 +14,7 @@ export default function Home() {
       <Typography>Featured Projects</Typography>
       <Grid container spacing={2}>
         {[0, 1, 2].map((i) => (
-          <Grid item key={i}>
+          <Grid key={i}>
             <ProjectCard {...projectCardData[i]} />
           </Grid>
         ))}
