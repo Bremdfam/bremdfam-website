@@ -17,10 +17,8 @@ Create Footer:
     - Github
     - Styling
 Create Menu:
-    - Click the logo to expand the menu.
     - Logo should be flashing to tell the user its clickable.
     - Links:
-        - About Me page
         - Projects page
         - LinkedIn
     - Styling
