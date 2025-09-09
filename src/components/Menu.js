@@ -1,6 +1,7 @@
 'use client'
 import { useState } from "react";
-import { Box, Button, Typography, Link, Collapse } from "@mui/material";
+import { Box, Button, Typography, Collapse } from "@mui/material";
+import Link from 'next/link'
 
 function Menu() {
     const [open, setOpen] = useState(false);
