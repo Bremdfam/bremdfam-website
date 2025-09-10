@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react";
-import { Box, Button, Typography, Collapse } from "@mui/material";
+import { Box, Button, Typography, Collapse, GlobalStyles } from "@mui/material";
 import Link from 'next/link'
 
 function Menu() {
@@ -11,50 +11,63 @@ function Menu() {
     };
 
     return (
-        <Box
-            sx={{
-                position: 'absolute',
-                zIndex: 9999,
-                border: '2px solid black',
-                width: '200px',
-                p: 2,
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                gap: 1
-            }}
-        >
-            <Button
-                onClick={handleToggle}
-                aria-label="Toggle Menu"
+        <>
+            <GlobalStyles styles={{
+                '@keyframes flash': {
+                    '0%': { opacity: 1 },
+                    '50%': { opacity: 0.75 },
+                    '100%': { opacity: 1 }
+                }
+            }} />
+            <Box
                 sx={{
-                    backgroundImage: 'url(/images/logo.jpg)',
-                    borderRadius: '100%',
-                    backgroundSize: 'cover',
-                    backgroundPosition: '-2px center',
-                    width: '70px',
-                    height: '70px'
+                    width: {
+                        md: '250px'
+                    },
+                    position: 'absolute',
+                    zIndex: 9999,
+                    backgroundColor: open ? 'orange' : 'none',
+                    p: 2,
+                    display: 'flex',
+                    gap: 1,
+                    transition: 'background-color 0.3s ease-in-out',
+                    margin: '50px',
+                    borderRadius: '20px'
                 }}
-            />
-            <Collapse in={open}>
-                <Box
+            >
+                <Button
+                    onClick={handleToggle}
+                    aria-label="Toggle Menu"
+                    aria-expanded={open}
                     sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                        gap: 1,
-                        mt: 2
+                        width: '70px',
+                        height: '70px',
+                        backgroundImage: 'url(/images/logo.jpg)',
+                        borderRadius: '100%',
+                        backgroundSize: 'cover',
+                        backgroundPosition: '-2px center',
+                        animation: open ? 'none' : 'flash 2.5s infinite'
                     }}
-                >
-                    <Typography>Bremdfam's Site</Typography>
-                    <Link href='/'>Home</Link>
-                    <Link href='/AboutMe'>About Me</Link>
-                    <Link href='/'>Projects</Link>
-                    <Link href='/'>LinkedIn</Link>
-                    <Link href='https://github.com/Bremdfam' target='_blank'>Github</Link>
-                </Box>
-            </Collapse>
-        </Box>
+                />
+                <Collapse in={open}>
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                            gap: 1,
+                            mt: 2
+                        }}
+                    >
+                        <Link href='/'>Bremdfam's Site</Link>
+                        <Link href='/AboutMe'>About Me</Link>
+                        <Link href='/'>Projects</Link>
+                        <Link href='/'>LinkedIn</Link>
+                        <Link href='https://github.com/Bremdfam' target='_blank' >Github</Link>
+                    </Box>
+                </Collapse>
+            </Box>
+        </>
     );
 }
 
