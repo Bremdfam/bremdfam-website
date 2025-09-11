@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react";
-import { Box, Button, Typography, Collapse, GlobalStyles } from "@mui/material";
+import { Box, Button, Collapse, GlobalStyles } from "@mui/material";
 import Link from 'next/link'
 
 function Menu() {
@@ -61,7 +61,7 @@ function Menu() {
                     >
                         <Link href='/'>Bremdfam's Site</Link>
                         <Link href='/AboutMe'>About Me</Link>
-                        <Link href='/'>Projects</Link>
+                        <Link href='/Projects'>Projects</Link>
                         <Link href='/'>LinkedIn</Link>
                         <Link href='https://github.com/Bremdfam' target='_blank' >Github</Link>
                     </Box>
