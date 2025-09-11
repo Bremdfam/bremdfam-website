@@ -17,7 +17,7 @@ const projectCardData = [
         img: 'url(https://tse4.mm.bing.net/th/id/OIP.GvutyAd5YZ7HC4Hx502T8gHaLH?r=0&cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3)',
         link: 'https://github.com/Bremdfam/XCom-2-Mod',
         tags: [
-            "javascript",
+            "xcom",
             "c++"
         ]
     },
@@ -27,6 +27,10 @@ const projectCardData = [
         description: 'A website dedicated to logging gaming stats for my group of friends.',
         img: 'url(https://tse4.mm.bing.net/th/id/OIP.p98i_5w9DAqbAu_iTdnezwHaE7?r=0&cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3)',
         link: 'https://github.com/Bremdfam/fight-night-site',
+        tags: [
+            "javascript",
+            "fight night"
+        ]
     },
     {
         id: 4,
@@ -34,6 +38,11 @@ const projectCardData = [
         description: 'This is a bot for Twitch.tv',
         img: 'url(https://th.bing.com/th/id/R.e3aebe6a116dc60c4938d1820121f0ee?rik=yTPdMrJItL%2bLFg&pid=ImgRaw&r=0)',
         link: 'https://github.com/Bremdfam',
+        tags: [
+            "javascript",
+            "twitch",
+            "Under Construction"
+        ]
     },
 
 ];
