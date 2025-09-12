@@ -3,7 +3,6 @@ Create Landing Page:
     - Banner:
         - img of my face on the right
         - Styling
-    - Small "About Me" section. It should have my coding language experience and motivation for programming.
     - Styling
 Create Menu:
     - Links:
