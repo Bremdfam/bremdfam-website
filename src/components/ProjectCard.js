@@ -1,11 +1,12 @@
 import { Box, Typography, Link } from "@mui/material";
 
-export default function ProjectCard({ title, description, img, link }) {
+export default function ProjectCard({ title, description, img, link, tags}) {
     return (
+
         <Box
             sx={{
-                width: 300,
-                height: 300,
+                width: 250,
+                height: 250,
                 position: 'relative',
                 overflow: 'hidden',
                 borderRadius: 2,
@@ -16,8 +17,11 @@ export default function ProjectCard({ title, description, img, link }) {
                 '&:hover .infoBox': {
                     transform: 'translateY(0)',
                 },
+                
             }}
         >
+
+            {tags.includes("Under Construction") ? console.log("tags", tags) : console.log("No tags")}
             <Box
                 className="infoBox"
                 sx={{
@@ -29,13 +33,20 @@ export default function ProjectCard({ title, description, img, link }) {
                     color: 'black',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    transform: 'translateY(80%)',
+                    textAlign: 'center',
+                    transform: 'translateY(75%)',
                     transition: 'transform 0.4s ease-in-out',
-                    padding: 2,
                 }}
             >
-                <Link variant='h4' href={link} target='_blank'>{title} &gt;&gt;&gt;</Link>
-                <Typography variant="body2">{description}</Typography>
+                <Box sx={{
+                    //padding: '6px 0px 10px 0px'
+                }}>
+                    <Link variant='h5' underline="hover" color="black" href={link} target='_blank'>
+                        {title} &gt;&gt;
+                    </Link>
+                </Box>
+
+                <Typography variant="body2" textAlign={'left'} paddingLeft={'5%'}>{description}</Typography>
             </Box>
         </Box>
     );

@@ -3,11 +3,11 @@ const projectCardData = [
         id: 1,
         title: "Bremdfam's Website",
         description: 'A website built by me.',
-        img: 'url(https://media.gettyimages.com/id/673115623/photo/hand-of-man-stroking-tabby-cat.jpg?b=1&s=170667a&w=0&k=20&c=wvSe7JU3nmvTG7y3edAnXH497L8GMEo47luDysHj4wE=)',
+        img: 'url(/images/logo.jpg)',
         link: 'https://github.com/Bremdfam/bremdfam-website',
         tags: [
             "javascript",
-            "css"
+            "css",
         ]
     },
     {

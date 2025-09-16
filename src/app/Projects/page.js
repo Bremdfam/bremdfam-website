@@ -36,8 +36,12 @@ export default function page() {
                     </Grid>
 
                 </Box>
-                <Box mb={2}>
-                    <Typography>Tags</Typography>
+                <Box sx={{
+                    border: "2px solid orange",
+                    height: '100%',
+                    
+                }}>
+                    <Typography display={'flex'} justifyContent={'center'} variant="h5">Tags</Typography>
                     {uniqueTags.map(tag => (
                         <Box key={tag} display="flex" alignItems="center">
                             <Checkbox
