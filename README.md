@@ -1,19 +1,19 @@
 ## To-Do
-Create Landing Page:
-    - Banner:
-        - img of my face on the right
-        - Styling
+Landing Page:
     - Styling
-Create Menu:
+Banner:
+    - img of my face on the right
+    - Styling
+Menu:
     - Links:
         - LinkedIn
     - Styling
-Create About Me Page:
+About Me Page:
     - Introduction
     - Career & Skills
     - Contact (LinkedIn)
     - Styling
-Create Projects Page:
+Projects Page:
     - Styling
 Code Cleanup:
     - add "aria-labels" for accessability

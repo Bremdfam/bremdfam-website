@@ -8,7 +8,7 @@ function Banner({ title }) {
                 height: "25vh",
                 backgroundImage: `
                     linear-gradient(90deg, rgba(235, 90, 0, 1) 0%, rgba(255, 255, 255, 0) 65%, rgba(235, 90, 0, 1) 100%),
-                    url('/images/placeholder_img.jpg')
+                    url('/images/pfp.jpg')
                     `,
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: '60%',
