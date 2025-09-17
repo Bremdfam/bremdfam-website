@@ -42,7 +42,6 @@ export default function page() {
                 <Box sx={{
                     border: "2px solid orange",
                     height: '100%',
-
                 }}>
                     <Typography display={'flex'} justifyContent={'center'} variant="h5">Tags</Typography>
                     {uniqueTags.map(tag => (
