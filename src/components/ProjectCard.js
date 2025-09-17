@@ -1,8 +1,9 @@
 import { Box, Typography, Link } from "@mui/material";
 
-export default function ProjectCard({ title, description, img, link, tags}) {
-    return (
+export default function ProjectCard({ title, description, img, link, tags }) {
+    const isUnderDevelopment = tags?.includes("Under Development");
 
+    return (
         <Box
             sx={{
                 width: 250,
@@ -17,11 +18,33 @@ export default function ProjectCard({ title, description, img, link, tags}) {
                 '&:hover .infoBox': {
                     transform: 'translateY(0)',
                 },
-                
             }}
         >
-
-            {tags.includes("Under Construction") ? console.log("tags", tags) : console.log("No tags")}
+            {isUnderDevelopment ? (
+                // Render grey box when a project is under construction
+                <>
+                    <Box
+                        sx={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: '100%',
+                            backgroundColor: 'rgba(128, 128, 128, 0.5)',
+                            zIndex: 1,
+                        }} />
+                    <Typography sx={{
+                        position: 'absolute',
+                        textAlign: 'center',
+                        fontWeight: 'bold',
+                        color: 'black',
+                        zIndex: '2',
+                    }}
+                        variant="h4" >
+                        Under Development
+                    </Typography>
+                </>
+            ) : null}
             <Box
                 className="infoBox"
                 sx={{

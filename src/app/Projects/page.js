@@ -25,8 +25,11 @@ export default function page() {
         <>
             <Menu />
             <Banner title={"Projects"} />
-            <Box display={'flex'}>
-                <Box>
+            <Box display={'flex'} >
+                <Box sx={{
+                    flexGrow: '1',
+                    border: '2px solid black'
+                }}>
                     <Grid container spacing={2}>
                         {filteredProjects.map((data, i) => (
                             <Grid key={i}>
@@ -39,7 +42,7 @@ export default function page() {
                 <Box sx={{
                     border: "2px solid orange",
                     height: '100%',
-                    
+
                 }}>
                     <Typography display={'flex'} justifyContent={'center'} variant="h5">Tags</Typography>
                     {uniqueTags.map(tag => (

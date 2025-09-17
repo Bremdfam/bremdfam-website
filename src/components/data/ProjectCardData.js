@@ -41,7 +41,7 @@ const projectCardData = [
         tags: [
             "javascript",
             "twitch",
-            "Under Construction"
+            "Under Development"
         ]
     },
 
