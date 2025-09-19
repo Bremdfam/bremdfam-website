@@ -17,7 +17,7 @@ const projectCardData = [
         id: 2,
         title: "XCom 2 Voicepack",
         description: "A custom voice pack for XCOM 2 featuring my own voice, recorded and tailored to match the game's theme—designed to immerse myself directly into the gameplay.",
-        img: 'url(https://tse4.mm.bing.net/th/id/OIP.GvutyAd5YZ7HC4Hx502T8gHaLH?r=0&cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3)',
+        img: 'url(/images/xcom-2-logo.jpg)',
         link: 'https://github.com/Bremdfam/XCom-2-Mod',
         tags: [
             "Game",
@@ -44,11 +44,10 @@ const projectCardData = [
         id: 4,
         title: "Twitch Bot",
         description: 'This is a bot for Twitch.tv',
-        img: 'url(https://th.bing.com/th/id/R.e3aebe6a116dc60c4938d1820121f0ee?rik=yTPdMrJItL%2bLFg&pid=ImgRaw&r=0)',
+        img: 'url(/images/twitch-logo.jpg)',
         link: 'https://github.com/Bremdfam',
         tags: [
-            "javascript",
-            "twitch",
+            "Bot",
             "Under Development"
         ]
     },

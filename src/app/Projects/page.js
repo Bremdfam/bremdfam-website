@@ -6,8 +6,8 @@ import { useState } from 'react';
 import ProjectCard from "@/components/ProjectCard";
 import { Box, Checkbox, Grid, Typography } from "@mui/material";
 
-export default function page() {
-    const uniqueTags = [...new Set(projectCardData.flatMap(project => project.tags))];
+export default function Page() {
+    const uniqueTags = [...new Set(projectCardData.flatMap(project => project.tags))].sort((a, b) => a.localeCompare(b));;
     const [selectedTags, setSelectedTags] = useState([]);
     const handleTagToggle = (tag) => {
         setSelectedTags(prev =>
