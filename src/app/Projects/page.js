@@ -6,8 +6,8 @@ import { useState } from 'react';
 import ProjectCard from "@/components/ProjectCard";
 import { Box, Checkbox, Grid, Typography } from "@mui/material";
 
-export default function page() {
-    const uniqueTags = [...new Set(projectCardData.flatMap(project => project.tags))];
+export default function Page() {
+    const uniqueTags = [...new Set(projectCardData.flatMap(project => project.tags))].sort((a, b) => a.localeCompare(b));;
     const [selectedTags, setSelectedTags] = useState([]);
     const handleTagToggle = (tag) => {
         setSelectedTags(prev =>
@@ -25,8 +25,11 @@ export default function page() {
         <>
             <Menu />
             <Banner title={"Projects"} />
-            <Box display={'flex'}>
-                <Box>
+            <Box display={'flex'} >
+                <Box sx={{
+                    flexGrow: '1',
+                    border: '2px solid black'
+                }}>
                     <Grid container spacing={2}>
                         {filteredProjects.map((data, i) => (
                             <Grid key={i}>
@@ -36,8 +39,11 @@ export default function page() {
                     </Grid>
 
                 </Box>
-                <Box mb={2}>
-                    <Typography>Tags</Typography>
+                <Box sx={{
+                    border: "2px solid orange",
+                    height: '100%',
+                }}>
+                    <Typography display={'flex'} justifyContent={'center'} variant="h5">Tags</Typography>
                     {uniqueTags.map(tag => (
                         <Box key={tag} display="flex" alignItems="center">
                             <Checkbox
