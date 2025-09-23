@@ -45,7 +45,7 @@ export default function Home() {
             </Grid>
           ))}
         </Grid>
-        <Button component='a' href="/">See More</Button>
+        <Button component='a' href="/Projects">See More</Button>
       </Box>
     </>
   );

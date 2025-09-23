@@ -48,6 +48,7 @@ const projectCardData = [
         link: 'https://github.com/Bremdfam',
         tags: [
             "Bot",
+            "Javascript",
             "Under Development"
         ]
     },

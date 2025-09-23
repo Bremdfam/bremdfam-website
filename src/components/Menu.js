@@ -62,7 +62,7 @@ function Menu() {
                         <Link href='/'>Bremdfam's Site</Link>
                         <Link href='/AboutMe'>About Me</Link>
                         <Link href='/Projects'>Projects</Link>
-                        <Link href='/'>LinkedIn</Link>
+                        <Link href='https://www.linkedin.com/in/brendan-bremdfam-piper/'>LinkedIn</Link>
                         <Link href='https://github.com/Bremdfam' target='_blank' >Github</Link>
                     </Box>
                 </Collapse>
