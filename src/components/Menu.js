@@ -31,7 +31,7 @@ function Menu() {
                     display: 'flex',
                     gap: 1,
                     transition: 'background-color 0.3s ease-in-out',
-                    margin: '50px',
+                    margin: '500px',
                     borderRadius: '20px'
                 }}
             >
