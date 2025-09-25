@@ -12,25 +12,9 @@ function Banner({ title }) {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-between",
-                px: 5,
-                fontFamily: "'Poppins', sans-serif",
+                px: 10,
             }}
         >
-            {/* Decorative Background Element */}
-            <Box
-                sx={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    backgroundImage: `url('/images/abstract-orange-wave.svg')`,
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                    opacity: 0.08,
-                    zIndex: 0,
-                }}
-            />
 
             {/* Left Content Box - Smaller */}
             <Box
@@ -50,7 +34,7 @@ function Banner({ title }) {
                     {title}
                 </Typography>
                 <Typography variant="subtitle2" sx={{ fontStyle: "italic", color: "#555", mb: 2 }}>
-                    Creative projects, code, and curiosity.
+                    Projects, Code, and Me
                 </Typography>
                 <ButtonGroup variant="contained">
                     <Button
@@ -88,11 +72,11 @@ function Banner({ title }) {
                 sx={{
                     position: "absolute",
                     top: "50%",
-                    left: "45%",
+                    right: "30%",
                     transform: "translate(-50%, -50%)",
-                    width: "120px",
-                    height: "160px",
-                    borderRadius: "50% / 60%",
+                    width: "130px",
+                    height: "170px",
+                    borderRadius: "50%",
                     padding: "6px",
                     background: "linear-gradient(270deg, #EB5A00, #FFB366, #001F3F, #EB5A00)",
                     backgroundSize: "600% 600%",
@@ -112,8 +96,7 @@ function Banner({ title }) {
                         backgroundImage: "url('/images/pfp-bgcolor.png')",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
-                        borderRadius: "50% / 60%",
-                        border: "3px solid white",
+                        borderRadius: "50%",
                     }}
                 />
             </Box>
