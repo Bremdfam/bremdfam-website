@@ -2,11 +2,8 @@
 Landing Page:
     - Styling
 Banner:
-    - img of my face on the right
     - Styling
 Menu:
-    - Links:
-        - LinkedIn
     - Styling
 About Me Page:
     - Introduction
@@ -15,6 +12,8 @@ About Me Page:
     - Styling
 Projects Page:
     - Styling
+        - Make the Roblox logo more centered
+        - Check if all screen sizes appropriately see project descriptions. Sometimes you can see the descriptions without hovering over the projects.
 Code Cleanup:
     - add "aria-labels" for accessability
     - Add correct tags to project data (coding language, project type, under development)

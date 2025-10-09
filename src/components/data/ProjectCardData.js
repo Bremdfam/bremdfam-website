@@ -43,13 +43,24 @@ const projectCardData = [
     {
         id: 4,
         title: "Twitch Bot",
-        description: 'This is a bot for Twitch.tv',
+        description: 'A configurable chatbot for Twitch.tv that automates winning giveaways by detecting repeated messages, username mentions, and stream status changes.',
         img: 'url(/images/twitch-logo.jpg)',
-        link: 'https://github.com/Bremdfam',
+        link: 'https://github.com/Bremdfam/win-twitch.tv-giveaways-bot',
         tags: [
             "Bot",
-            "Javascript",
-            "Under Development"
+            "Javascript"
+        ]
+    },
+    {
+        id: 5,
+        title: "Roblox Game",
+        description: 'A game for Roblox.',
+        img: 'url(/images/roblox-logo.jpg)',
+        link: 'https://github.com/Bremdfam',
+        tags: [
+            "Under Development",
+            "Lua",
+            "Game"
         ]
     },
 

@@ -12,19 +12,19 @@ function Banner({ title }) {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-between",
-                px: 10,
+                px: 20,
             }}
         >
 
-            {/* Left Content Box - Smaller */}
+            {/* Content Box */}
             <Box
                 sx={{
-                    backgroundColor: "#fff8f0",
+                    backgroundColor: "blanchedalmond",
                     borderRadius: 2,
                     boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
                     padding: 2,
                     zIndex: 1,
-                    maxWidth: "30%",
+                    // maxWidth: "30%",
                 }}
             >
                 <Typography variant="h5" sx={{ fontWeight: "bold", color: "#EB5A00", mb: 1 }}>
