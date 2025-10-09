@@ -16,7 +16,7 @@ const projectCardData = [
     {
         id: 2,
         title: "XCom 2 Voicepack",
-        description: "A custom voice pack for XCOM 2 featuring my own voice, recorded and tailored to match the game's theme—designed to immerse myself directly into the gameplay.",
+        description: "A custom voice pack for XCOM 2 featuring my own voice, recorded and tailored to match the game's theme and design.",
         img: 'url(/images/xcom-2-logo.jpg)',
         link: 'https://github.com/Bremdfam/XCom-2-Mod',
         tags: [

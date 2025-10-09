@@ -14,6 +14,7 @@ Projects Page:
     - Styling
         - Make the Roblox logo more centered
         - Check if all screen sizes appropriately see project descriptions. Sometimes you can see the descriptions without hovering over the projects.
+        - Look for high quality imgs
 Code Cleanup:
     - add "aria-labels" for accessability
     - Add correct tags to project data (coding language, project type, under development)
