@@ -12,7 +12,8 @@ export default function Home() {
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center'
+        alignItems: 'center',
+        gap: '10px'
       }}>
 
         <Box sx={{
@@ -22,8 +23,12 @@ export default function Home() {
           justifyContent: 'center',
           gap: 2,
           width: '75%',
-          border: '2px solid black',
-          textAlign: 'center'
+          border: '1px solid black',
+          textAlign: 'center',
+          marginTop: '10px',
+          padding: '5px',
+          backgroundColor: 'rgba(252, 116, 32, 1)',
+          borderRadius: '5px'
         }}>
           <Typography variant="h4" component="h1">About Me</Typography>
           <Typography variant="body1">
@@ -37,15 +42,63 @@ export default function Home() {
           </Typography>
         </Box>
 
-        <Typography>Featured Projects</Typography>
-        <Grid container spacing={2}>
-          {[0, 1, 3].map((i) => (
-            <Grid key={i}>
-              <ProjectCard {...projectCardData[i]} />
-            </Grid>
-          ))}
-        </Grid>
-        <Button component='a' href="/Projects">See More</Button>
+        <Box sx={{
+          marginBottom: '20px',
+          padding: '20px',
+          backgroundColor: "rgba(255, 98, 0, 1)",
+          borderRadius: '2px',
+          border: '1px solid black'
+        }}>
+          <Box sx={{ 
+            position: 'relative', 
+            height: '60px',
+            }}>
+            <Box
+              sx={{
+                position: 'absolute',
+                top: 0,
+                left: '50%',
+                transform: 'translateX(-50%)',
+              }}
+            >
+              <Typography variant="h4" component="h1">
+                Featured Projects
+              </Typography>
+            </Box>
+
+            <Box
+              sx={{
+                position: 'absolute',
+                top: 0,
+                right: 0,
+              }}
+            >
+              <Button
+                component="a"
+                href="/Projects"
+                sx={{
+                  backgroundColor: "#EB5A00",
+                  color: "#fff",
+                  "&:hover": {
+                    backgroundColor: "#d14f00",
+                  },
+                }}
+              >
+                See More
+              </Button>
+            </Box>
+          </Box>
+
+          <Grid container spacing={2}>
+            {/* Change the map index numbers to display different projects. */}
+            {[0, 1, 3].map((i) => (
+              <Grid key={i}>
+                <ProjectCard {...projectCardData[i]} />
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+
       </Box>
     </>
   );

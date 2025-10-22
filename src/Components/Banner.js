@@ -19,7 +19,7 @@ function Banner({ title }) {
             {/* Content Box */}
             <Box
                 sx={{
-                    backgroundColor: "blanchedalmond",
+                    backgroundColor: "rgba(248, 227, 193, 1)",
                     borderRadius: 2,
                     boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
                     padding: 2,
@@ -36,7 +36,7 @@ function Banner({ title }) {
                 <Typography variant="subtitle2" sx={{ fontStyle: "italic", color: "#555", mb: 2 }}>
                     Projects, Code, and Me
                 </Typography>
-                <ButtonGroup variant="contained">
+                <ButtonGroup>
                     <Button
                         component="a"
                         href="/Projects"

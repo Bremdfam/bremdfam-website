@@ -62,13 +62,12 @@ export default function ProjectCard({ title, description, img, link, tags }) {
                 }}
             >
                 <Box sx={{
-                    padding: '6px 0px 10px 0px' // Check to see if this works for bigger screens
+                    padding: '6px 0px 10px 0px'
                 }}>
                     <Link variant='h5' underline="hover" color="black" href={link} target='_blank'>
                         {title}
                     </Link>
                 </Box>
-
                 <Typography variant="body2" textAlign={'left'} paddingLeft={'5%'}>{description}</Typography>
             </Box>
         </Box>
