@@ -21,19 +21,14 @@ function Menu() {
             }} />
             <Box
                 sx={{
-                    width: {
-                        md: '250px'
-                    },
-                    position: 'absolute',
+                    position: 'fixed',
                     zIndex: 9999,
-                    backgroundColor: open ? 'orange' : 'none',
+                    backgroundColor: open ? 'rgb(253, 237, 224)' : 'none',
                     p: 2,
                     display: 'flex',
-                    gap: 1,
                     transition: 'background-color 0.3s ease-in-out',
-                    marginLeft: '20px',
-                    marginTop: "20px",
-                    borderRadius: '20px'
+                    borderRadius: '20px',
+
                 }}
             >
                 <Button
@@ -53,17 +48,45 @@ function Menu() {
                 <Collapse in={open}>
                     <Box
                         sx={{
+                            width: "150px",
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',
                             gap: 1,
-                            mt: 2
+                            '& a': {
+                                position: 'relative',
+                                color: 'black',
+                                textDecoration: 'none',
+                                display: 'inline-block',
+                                paddingBottom: '4px',
+                                transition: 'color 0.3s ease-in-out',
+
+                                '&::after': {
+                                    content: '""',
+                                    position: 'absolute',
+                                    left: '50%',
+                                    bottom: 0,
+                                    transform: 'translateX(-50%) scaleX(0)',
+                                    transformOrigin: 'center',
+                                    width: '100%',
+                                    height: '2px',
+                                    backgroundColor: '#4169E1',
+                                    transition: 'transform 0.3s ease-in-out',
+                                },
+
+                                '&:hover': {
+                                    color: '#EB5A00',
+                                    '&::after': {
+                                        transform: 'translateX(-50%) scaleX(1)',
+                                    },
+                                },
+                            }
                         }}
                     >
                         <Link href='/'>Bremdfam's Site</Link>
                         <Link href='/AboutMe'>About Me</Link>
                         <Link href='/Projects'>Projects</Link>
-                        <Link href='https://www.linkedin.com/in/brendan-bremdfam-piper/'>LinkedIn</Link>
+                        <Link href='https://www.linkedin.com/in/brendan-bremdfam-piper/' target='_blank'>LinkedIn</Link>
                         <Link href='https://github.com/Bremdfam' target='_blank' >Github</Link>
                     </Box>
                 </Collapse>

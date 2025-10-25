@@ -19,7 +19,7 @@ function Banner({ title }) {
             {/* Content Box */}
             <Box
                 sx={{
-                    backgroundColor: "rgb(255, 223, 174)",
+                    backgroundColor: "rgb(253, 237, 224)",
                     borderRadius: 2,
                     boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
                     padding: 2,

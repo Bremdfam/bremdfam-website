@@ -20,7 +20,10 @@ Code Cleanup:
     - Add correct tags to project data (coding language, project type, under development)
 Future Considerations:
     - Footer
-    - Mobile View
+    - Different layouts per screen size
+        - desktop
+        - laptop
+        - mobile
 
 ## Deploy on Vercel
 

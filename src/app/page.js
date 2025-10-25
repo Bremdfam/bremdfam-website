@@ -15,7 +15,6 @@ export default function Home() {
         alignItems: 'center',
         gap: '10px'
       }}>
-
         <Box sx={{
           display: 'flex',
           flexDirection: 'column',
