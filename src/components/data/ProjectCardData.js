@@ -21,7 +21,6 @@ const projectCardData = [
         link: 'https://github.com/Bremdfam/XCom-2-Mod',
         tags: [
             "Game",
-            "Mod",
             "UnrealScript"
         ]
     },

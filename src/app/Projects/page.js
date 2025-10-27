@@ -1,10 +1,12 @@
 'use client'
+// import { Banner, Menu } from "@/components"
 import Banner from "@/components/Banner";
 import Menu from "@/components/Menu";
 import projectCardData from "@/components/data/ProjectCardData";
 import { useState } from 'react';
 import ProjectCard from "@/components/ProjectCard";
-import { Box, Checkbox, Grid, Typography } from "@mui/material";
+import { Box, Checkbox, Grid, Typography, Tooltip } from "@mui/material";
+import InfoOutlineIcon from '@mui/icons-material/InfoOutline';
 
 export default function Page() {
     const uniqueTags = [...new Set(projectCardData.flatMap(project => project.tags))].sort((a, b) => a.localeCompare(b));;
@@ -25,10 +27,13 @@ export default function Page() {
         <>
             <Menu />
             <Banner title={"Projects"} />
-            <Box display={'flex'} >
+            <Box sx={{
+                display: 'flex',
+                padding: "2% 5% 0 5%"
+            }}>
                 <Box sx={{
                     flexGrow: '1',
-                    border: '2px solid black'
+                    // border: '2px solid black'
                 }}>
                     <Grid container spacing={2}>
                         {filteredProjects.map((data, i) => (
@@ -40,10 +45,16 @@ export default function Page() {
 
                 </Box>
                 <Box sx={{
-                    border: "2px solid orange",
                     height: '100%',
+                    border: "2px solid orange",
                 }}>
-                    <Typography display={'flex'} justifyContent={'center'} variant="h5">Tags</Typography>
+
+                    <Typography display={'flex'} justifyContent={'center'} variant="h5">
+                        Tags
+                        <Tooltip placement="top" arrow title="Results include items that match at least one of the selected tags.">
+                            <InfoOutlineIcon sx={{ ml: 1, cursor: 'pointer' }} />
+                        </Tooltip>
+                    </Typography>
                     {uniqueTags.map(tag => (
                         <Box key={tag} display="flex" alignItems="center">
                             <Checkbox

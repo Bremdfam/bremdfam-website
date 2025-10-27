@@ -1,10 +1,4 @@
 ## To-Do
-Landing Page:
-    - Styling
-Banner:
-    - Styling
-Menu:
-    - Styling
 About Me Page:
     - Introduction
     - Career & Skills
