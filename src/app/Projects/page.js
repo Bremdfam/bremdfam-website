@@ -1,5 +1,4 @@
 'use client'
-// import { Banner, Menu } from "@/components"
 import Banner from "@/components/Banner";
 import Menu from "@/components/Menu";
 import projectCardData from "@/components/data/ProjectCardData";
@@ -44,9 +43,13 @@ export default function Page() {
                     </Grid>
 
                 </Box>
+
+                {/* Tag Content Box */}
                 <Box sx={{
                     height: '100%',
                     border: "2px solid orange",
+                    minWidth: "200px",
+                    pt: "5px"
                 }}>
 
                     <Typography display={'flex'} justifyContent={'center'} variant="h5">
@@ -56,12 +59,24 @@ export default function Page() {
                         </Tooltip>
                     </Typography>
                     {uniqueTags.map(tag => (
-                        <Box key={tag} display="flex" alignItems="center">
+                        <Box key={tag} sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            color: "rgba(235, 90, 0, 1)",
+                            '&:hover': {
+                                backgroundColor: "rgba(235, 90, 0, 0.1)",
+                            },
+                            '&:hover .tag-label': {
+                                fontWeight: 'bold',
+                            },
+                        }}>
                             <Checkbox
                                 checked={selectedTags.includes(tag)}
                                 onChange={() => handleTagToggle(tag)}
                             />
-                            <Typography>{tag}</Typography>
+                            <Typography className="tag-label" mr={'10px'}>
+                                {tag}
+                            </Typography>
                         </Box>
                     ))}
                 </Box>
