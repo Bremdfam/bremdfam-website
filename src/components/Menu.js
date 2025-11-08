@@ -84,10 +84,10 @@ function Menu() {
                         }}
                     >
                         <Link href='/'>Bremdfam's Site</Link>
-                        <Link href='/AboutMe'>About Me</Link>
                         <Link href='/Projects'>Projects</Link>
-                        <Link href='https://www.linkedin.com/in/brendan-bremdfam-piper/' target='_blank'>LinkedIn</Link>
                         <Link href='https://github.com/Bremdfam' target='_blank' >Github</Link>
+                        <Link href='/Resume'>Resume</Link>
+                        <Link href='https://www.linkedin.com/in/brendan-bremdfam-piper/' target='_blank'>LinkedIn</Link>
                     </Box>
                 </Collapse>
             </Box>
