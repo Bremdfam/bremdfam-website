@@ -52,12 +52,11 @@ const projectCardData = [
     },
     {
         id: 4,
-        title: "Roblox Game",
-        description: 'A game for Roblox.',
+        title: "Roblox Zombie Survival Game",
+        description: 'Scripts for a Roblox zombie wave survival game. It includes aspects of the game like player movement, enemy ai, and camera controls. ',
         img: 'url(/images/roblox-logo.jpg)',
-        link: 'https://github.com/Bremdfam',
+        link: 'https://github.com/Bremdfam/Zombie-Survival-Roblox',
         tags: [
-            "Under Development",
             "Lua",
             "Game"
         ]

@@ -61,9 +61,7 @@ export default function ProjectCard({ title, description, img, link, tags }) {
                     transition: 'transform 0.4s ease-in-out',
                 }}
             >
-                <Box sx={{
-                    padding: '6px 0px 10px 0px'
-                }}>
+                <Box padding={'5px'}>
                     <Link variant='h5' underline="hover" color="black" href={link} target='_blank'>
                         {title}
                     </Link>
