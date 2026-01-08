@@ -1,4 +1,5 @@
 import { Typography, Grid, Button, Box } from "@mui/material";
+import Link from "next/link";
 import Banner from "../components/Banner";
 import Menu from "../components/Menu";
 import ProjectCard from "../components/ProjectCard";
@@ -88,21 +89,21 @@ export default function Home() {
                 right: 0,
               }}
             >
-              <Button
-                component="a"
-                href="/Projects"
-                sx={{
-                  backgroundColor: "#4169E1",
-                  color: "#fff",
-                  boxShadow: "1.5px 1.5px 1.5px 1.5px rgba(43, 42, 42, 1)",
-                  "&:hover": {
-                    backgroundColor: "#3560dfff",
-                    boxShadow: "1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 1)",
-                  },
-                }}
-              >
-                See More
-              </Button>
+              <Link href="/Projects" passHref>
+                <Button
+                  sx={{
+                    backgroundColor: "#4169E1",
+                    color: "#fff",
+                    boxShadow: "1.5px 1.5px 1.5px 1.5px rgba(43, 42, 42, 1)",
+                    "&:hover": {
+                      backgroundColor: "#3560dfff",
+                      boxShadow: "1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 1)",
+                    },
+                  }}
+                >
+                  See More
+                </Button>
+              </Link>
             </Box>
           </Box>
 

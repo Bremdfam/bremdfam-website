@@ -1,4 +1,5 @@
 import { Box, Typography, Button, ButtonGroup } from "@mui/material";
+import Link from "next/link";
 
 function Banner({ title }) {
     return (
@@ -37,19 +38,19 @@ function Banner({ title }) {
                     Projects, Code, and Me
                 </Typography>
                 <ButtonGroup>
-                    <Button
-                        component="a"
-                        href="/Projects"
-                        sx={{
-                            backgroundColor: "#EB5A00",
-                            color: "#fff",
-                            "&:hover": {
-                                backgroundColor: "#d14f00",
-                            },
-                        }}
-                    >
-                        Projects
-                    </Button>
+                    <Link href="/Projects" passHref>
+                        <Button
+                            sx={{
+                                backgroundColor: "#EB5A00",
+                                color: "#fff",
+                                "&:hover": {
+                                    backgroundColor: "#d14f00",
+                                },
+                            }}
+                        >
+                            Projects
+                        </Button>
+                    </Link>
                     <Button
                         component="a"
                         href="https://github.com/Bremdfam"
