@@ -61,6 +61,19 @@ const projectCardData = [
             "Game"
         ]
     },
+    {
+        id: 5,
+        title: "SoR Archipelago Mod",
+        description: 'A mod for Streets of Rogue that integrates with the Archipelago Multi-World Randomizer. Players can interact with different games through SoR.',
+        img: 'url(/images/logo.jpg)',
+        link: 'https://github.com/Bremdfam/SoR-Archipelago',
+        tags: [
+            "C#",
+            "Python",
+            "Game",
+            "Under Development"
+        ]
+    },
 
 ];
 
